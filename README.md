@@ -29,6 +29,7 @@ Ros Melodic --> Ros Noetic
 
 # Starting Rosbot
 
+To set up wifi and connect to monitor and mouse, follow the referencer here. https://husarion.com/tutorials/howtostart/rosbot---quick-start/#connecting-rosbot-to-your-wi-fi-network
 Copy start_rosbot.sh to /home/husarion.
 Run this cmnd chmod +x start_rosbot.sh to give it executable permissions.
 
