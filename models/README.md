@@ -1,7 +1,7 @@
 This project aims to implement machine learning model in the rosbot so that it can automately navigate without collising something. The model this project use is based on Nvidia's DAVE-2 system (https://arxiv.org/pdf/1604.07316v1.pdf).  
 The origin model is as follows.<br>
-![image](https://github.com/Taylucky/Rosbot2.0/blob/master/figures/DAVE2_structure.jpg)
-The modified model is as below.
+![image](https://github.com/Taylucky/Rosbot2.0/blob/master/figures/DAVE2_structure.jpg)<br>
+The modified model is as below.<br>
 
 Layer (type)                     Output Shape          Param #     Connected to                     
 ====================================================================================================
@@ -38,6 +38,12 @@ ________________________________________________________________________________
 relu4 (RELU)                     (None, 31, 98, 24)    0           conv1[0][0]  
 ____________________________________________________________________________________________________
 do2 (Dropout)                    (None, 100)           0           fc1[0][0]                        
+____________________________________________________________________________________________________
+fc3 (Dense)                      (None, 100)           115300      flatten_3[0][0]                  
+____________________________________________________________________________________________________
+relu5 (RELU)                     (None, 31, 98, 24)    0           conv1[0][0]  
+____________________________________________________________________________________________________
+output (Dense)                   (None, 100)           115300      flatten_3[0][0]                  
 ____________________________________________________________________________________________________
 output (Dense)                   (None, 1)             11          elu8[0][0]                       
 ====================================================================================================
