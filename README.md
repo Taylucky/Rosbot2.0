@@ -4,6 +4,7 @@ This repo implemented the entire machine learning pipeline in a real system, dep
 
 About Rosbot 2.0
 
+
 The ROSbot 2.0 is a mobile robot platform developed by Husarion, designed to work seamlessly with the Robot Operating System (ROS). ROS is an open-source middleware framework widely used in robotics research and development. 
 
 ASUS Tinker Board 2GB RAM, 32 GB MicroSD 
