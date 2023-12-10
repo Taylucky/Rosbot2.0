@@ -7,7 +7,7 @@ path = "/content/drive/<your path>/Rosbot/training"
 os.chdir(path)
 print(os.getcwd())
 ```
-3.Install the packages
+3. Install the packages
 ```
 !pip install torch torchvision numpy black mypy scipy scikit-image pandas opencv-python matplotlib kornia
 ```
