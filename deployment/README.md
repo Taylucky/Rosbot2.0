@@ -37,7 +37,7 @@ pip show scipy
 
 
 # Working:
-Copy the rosbot_ml.py file in the src file of husarion_ros.
+Copy the rosbot_ml.py and inference.py file in the src file of husarion_ros.
 
 First, launch the rosbot driver to run all the drivers of the rosbot. :
 
