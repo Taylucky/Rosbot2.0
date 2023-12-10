@@ -3,6 +3,26 @@ The rosbot_ml.py file is the main script for the autonomous navigation of the ro
 The main purpose is to include both lidar and images in our system, so there are 2 parts in the code that is the lidar and the ml model. 
 When the minimum distance between the object and rosbot is less than 40 cm, the lidar code runs which will stop the rosbot. Otherwise, the ml model runs which predicts the angular velocity and publishes that to the robot.
 
+# Requirements
+The main packages required are scipy, pytorch and numpy.
+Since the rosbot is a 32bit system, we had to directly download the binaries of the necessary packages with the correct version. 
+
+Follow the below steps:
+
+From this link, https://github.com/KumaTea/pytorch-arm/releases/tag/v1.8.0, download the following files.
+torch-1.8.0-cp38-cp38-linux_armv7l.whl
+torchvision-0.9.0-cp38-cp38-linux_armv7l.whl
+
+Copy the below files, to this path /home/husarion/husarion_ws/src/datacoll/src
+
+Open the terminal and run the below commands to install torch and torchvision.
+
+```
+cd /home/husarion/husarion_ws/src/datacoll/src
+pip install torch-1.8.0-cp38-cp38-linux_armv7l.whl
+pip install torchvision-0.9.0-cp38-cp38-linux_armv7l.whl
+```
+
 # Working:
 Copy the rosbot_ml.py file in the src file of husarion_ros.
 
