@@ -1,1 +1,1 @@
-
+This project aims to implement machine learning model in the rosbot so that it can automately navigate without collising something. The model this project use is based on Nvidia's DAVE-2 system (https://arxiv.org/pdf/1604.07316v1.pdf).  
