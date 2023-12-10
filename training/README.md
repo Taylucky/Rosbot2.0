@@ -2,7 +2,7 @@
 ### Training on the Colab
 Colab is easier to debug.
 1. Upload Rosbot2.0 folder to your Google Drive
-2. Create a python notebook on Colab and mount your Google Drive
+2. Create a python notebook on Colab, change the runtime type as GPU and mount your Google Drive
 3. Change the working directory to the training part
 ```
 import os
