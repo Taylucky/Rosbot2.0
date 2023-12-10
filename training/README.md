@@ -43,4 +43,4 @@ If you don't have ``train.sh`` scripts, you can also run it directly
 ```
 sbatch -w ai01 -p gnolim --gres=gpu:1 --exclusive=user python3 train_DAVE2.py /content/drive/<your path>/Rosbot/datasets/training_data/ # for gnolim partition nodes
 ```
-10.   
+10.  Check the job periodically to be sure it is progressing using the `squeue -u $USER` command, and check the log according to the `$SLURM_JOB_ID` in `slurm-$SLURM_JOB_ID.out`.
