@@ -44,3 +44,6 @@ If you don't have ``train.sh`` scripts, you can also run it directly
 sbatch -w ai01 -p gnolim --gres=gpu:1 --exclusive=user python3 train_DAVE2.py /content/drive/<your path>/Rosbot/datasets/training_data/ # for gnolim partition nodes
 ```
 9.  Check the job periodically to be sure it is progressing using the `squeue -u $USER` command, and check the log according to the `$SLURM_JOB_ID` in `slurm-$SLURM_JOB_ID.out`.
+
+### Saving the model
+After training the model, you will get the file which saved the best model such as ``training/model1-fixnoise-DAVE2v3-640x480-lr0.0001-100epoch-64batch-lossMSE-6Ksamples-INDUSTRIALandHIROCHIandUTAH-noiseflipblur-best.pt``. This is used for testing. You can also get the .txt file including the information about the training such as training_loss.
