@@ -10,11 +10,11 @@ path = "/content/drive/<your path>/Rosbot/training"
 os.chdir(path)
 print(os.getcwd())
 ```
-7. Install the packages
+4. Install the packages
 ```
 !pip install torch torchvision numpy black mypy scipy scikit-image pandas opencv-python matplotlib kornia
 ```
-8. run the training code
+5. run the training code
 ```
 !python train_DAVE2.py /content/drive/<your path>/Rosbot/datasets/training_data/
 ```
@@ -33,9 +33,9 @@ On the local terminal
 ```
 scp -r ~/Rosbot2.0/datasets computing-id@portal.cs.virginia.edu:/path/to/dataset 
 ```
-7.  Edit the parent directory of dataset in the ``train.sh`` script
-8.  Check what slurm gpu nodes are available via `sinfo` Nodes marked `idle` mean they are available for you to launch jobs on them. Refer to the CS documentation here for more info: [CS computing info](https://www.cs.virginia.edu/wiki/doku.php?id=start).
-9.   Launch the job on slurm using one of the following configurations:
+6.  Edit the parent directory of dataset in the ``train.sh`` script
+7.  Check what slurm gpu nodes are available via `sinfo` Nodes marked `idle` mean they are available for you to launch jobs on them. Refer to the CS documentation here for more info: [CS computing info](https://www.cs.virginia.edu/wiki/doku.php?id=start).
+8.   Launch the job on slurm using one of the following configurations:
 ```
 sbatch -w ai01 -p gnolim --gres=gpu:1 --exclusive=user train.sh # for gnolim partition nodes
 ```
@@ -43,4 +43,4 @@ If you don't have ``train.sh`` scripts, you can also run it directly
 ```
 sbatch -w ai01 -p gnolim --gres=gpu:1 --exclusive=user python3 train_DAVE2.py /content/drive/<your path>/Rosbot/datasets/training_data/ # for gnolim partition nodes
 ```
-10.  Check the job periodically to be sure it is progressing using the `squeue -u $USER` command, and check the log according to the `$SLURM_JOB_ID` in `slurm-$SLURM_JOB_ID.out`.
+9.  Check the job periodically to be sure it is progressing using the `squeue -u $USER` command, and check the log according to the `$SLURM_JOB_ID` in `slurm-$SLURM_JOB_ID.out`.
