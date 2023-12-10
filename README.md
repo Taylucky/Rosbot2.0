@@ -13,6 +13,7 @@ The ROSbot 2.0 is a mobile robot platform developed by Husarion, designed to wor
 ASUS Tinker Board 2GB RAM, 32 GB MicroSD 
 RPLIDAR A2 laser scanner with 8m range 
 RGBD Camera with image size 640x480 
+![image](https://github.com/Taylucky/Rosbot2.0/blob/master/figures/IMG_2994.jpg)
 
 Installation Steps: 
 
