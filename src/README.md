@@ -24,7 +24,7 @@ connect <your-controller-MAC>
 
 Once the connection is successful, the controller LED light will glow continuously.
 
-#Running the data collection script
+# Running the data collection script
 
 Open the terminal and run the following commands
 ```
@@ -33,7 +33,7 @@ roslaunch data_collection data_collector.launch dest:=$(pwd)/dataset
 ```
 
 
-#Results
+# Results
 
 
 DATASET: 
