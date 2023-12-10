@@ -35,6 +35,7 @@ Run this cmnd chmod +x start_rosbot.sh to give it executable permissions.
 
 Run ./start_rosbot.sh on the terminal.
 
-
+In the end, rosbot can navigate automatically in the building like the vedio.
+https://github.com/Taylucky/Rosbot2.0/blob/master/figures/navigation_vedio.mp4
 
  
