@@ -24,12 +24,14 @@ Slurm is faster to train model on large quantities of data.
 2. Clone this repo into your home directory: ``git clone git@github.com:Taylucky/Rosbot2.0.git``
 3. Get into the training folder ``cd ~/Rosbot2.0/training``
 4. install requirements using the script provided: ``./install.sh``
-5. Create a dataset directory and copy your local datasets to that remote directory:<br>
-   On the remote terminal
+5. Create a dataset directory and copy your local datasets to that remote directory:
+
+
+On the remote terminal
 ```
 mkdir -p ~/Rosbot2.0/datasets
 ```
-   On the local terminal
+On the local terminal
 ```
 scp -r ~/Rosbot2.0/datasets computing-id@portal.cs.virginia.edu:/path/to/dataset 
 ```
@@ -39,7 +41,7 @@ scp -r ~/Rosbot2.0/datasets computing-id@portal.cs.virginia.edu:/path/to/dataset
 ```
 sbatch -w ai01 -p gnolim --gres=gpu:1 --exclusive=user train.sh # for gnolim partition nodes
 ```
-If you don't have ``train.sh`` scripts, you can also run it directly
+   If you don't have ``train.sh`` scripts, you can also run it directly
 ```
 sbatch -w ai01 -p gnolim --gres=gpu:1 --exclusive=user python3 train_DAVE2.py /content/drive/<your path>/Rosbot/datasets/training_data/ # for gnolim partition nodes
 ```
