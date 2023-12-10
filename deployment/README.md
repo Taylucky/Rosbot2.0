@@ -9,8 +9,10 @@ Since the rosbot is a 32bit system, we had to directly download the binaries of 
 
 Follow the below steps:
 
-From this link, https://github.com/KumaTea/pytorch-arm/releases/tag/v1.8.0, download the following files.
+From the provided link, https://github.com/KumaTea/pytorch-arm/releases/tag/v1.8.0, download the following files.
+
 torch-1.8.0-cp38-cp38-linux_armv7l.whl
+
 torchvision-0.9.0-cp38-cp38-linux_armv7l.whl
 
 Copy the below files, to this path /home/husarion/husarion_ws/src/datacoll/src
@@ -21,7 +23,20 @@ Open the terminal and run the below commands to install torch and torchvision.
 cd /home/husarion/husarion_ws/src/datacoll/src
 pip install torch-1.8.0-cp38-cp38-linux_armv7l.whl
 pip install torchvision-0.9.0-cp38-cp38-linux_armv7l.whl
+pip install scipy==1.6
+pip install numpy==1.24
 ```
+Run the following the commands to check if the packages are installed
+
+```
+pip show torch
+pip show torchvision
+pip show numpy
+pip show scipy
+```
+
+Run the below command to install scipy
+
 
 # Working:
 Copy the rosbot_ml.py file in the src file of husarion_ros.
