@@ -2,4 +2,4 @@
 
 . .venv/bin/activate
 
-python train_DAVE2.py ../datasets/<dataset-parentdir>
+python3 train_DAVE2.py ../datasets/<dataset-parentdir>
