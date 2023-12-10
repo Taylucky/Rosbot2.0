@@ -35,8 +35,6 @@ pip show numpy
 pip show scipy
 ```
 
-Run the below command to install scipy
-
 
 # Working:
 Copy the rosbot_ml.py file in the src file of husarion_ros.
