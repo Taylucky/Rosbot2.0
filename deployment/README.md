@@ -46,13 +46,14 @@ roslaunch husarion_ros rosbot_drivers.launch
 ```
 
 In the second terminal, run the the rosbot_ml python script for the autonomous navigation. 
-rosbot_ml is just based on camera.
+
+rosbot_ml.py is just based on camera.
 
 
 ```
 rosrun datacoll rosbot_ml.py
 ```
-rosbot_ml_v3 is based on both camera and lidar.
+rosbot_ml_v3.py is based on both camera and lidar.
 ```
 rosrun datacoll rosbot_ml_v3.py
 ```
