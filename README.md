@@ -3,7 +3,7 @@
 [Autonomous Rosbot Navigation Tutorial ](https://github.com/MissMeriel/ROSbot_data_collection/tree/master)
 
 This repo implemented the entire machine learning pipeline in a real system, deploying the machine learning model onto a ROSbot robot car. This enables the robot to autonomously navigate without colliding with any obstacles.
-
+This repository was referenced from https://github.com/MissMeriel/ROSbot_data_collection, and we appreciate its assistance.
 
 About Rosbot 2.0
 
