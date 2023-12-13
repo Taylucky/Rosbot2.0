@@ -41,5 +41,6 @@ The model is working on 8497 data points in total.
 
 TRAINING DATASET: The training dataset contains 6797 data points. The data set is categorized into the following categories. 2650 data points were collected by driving the robot in a straight lap around the hallway. 4148 data points were collected by driving the robot in a zig-zag lap around the hallway.
 We also tried another data which includes 15443 data points. https://drive.google.com/drive/folders/1XR5PcO60nJpsCG0xHYyhWfDHFdOC9roJ?usp=drive_link
+
 TESTING DATASET: The testing dataset was obtained by driving the robot around the hallway and randomly selecting 1700 data points from the obtained dataset.
 https://drive.google.com/drive/folders/1jA995fa-MYWzpgBTYQFbCB_RM8x0MVMn?usp=drive_link
