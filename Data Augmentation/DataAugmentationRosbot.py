@@ -5,6 +5,7 @@
 
 
 # Brightness of the image
+#The images obtained during the laps were dim due to lighting. Hence we brightened the data using the following script. 
 
 from PIL import Image, ImageEnhance
 import os
@@ -46,6 +47,8 @@ if __name__ == "__main__":
 
 
 #flipping the image
+#The data collected was skewed towards the right, so we flipped the data(image and angular velocity) to make the distribution normal. 
+    
 from PIL import Image
 import os
 
@@ -81,7 +84,7 @@ if __name__ == "__main__":
 # In[ ]:
 
 
-#for flipping anular velocity.
+#for flipping angular velocity.
 import pandas as pd
 
 def flip_angular_velocity(csv_path, output_csv_path):
